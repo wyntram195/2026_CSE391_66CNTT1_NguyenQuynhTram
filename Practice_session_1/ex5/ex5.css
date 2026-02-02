@@ -36,7 +36,6 @@ body {
   padding: 5px 10px;
 }
 
-/* Main */
 .wrapper {
   width: 90%;
   margin: 30px auto;
@@ -87,7 +86,6 @@ th, td {
   border-radius: 4px;
 }
 
-/* Modal */
 .modal {
   width: 100%;
   margin-top: 40px;
@@ -140,7 +138,7 @@ input, select {
   padding: 6px 12px;
   border-radius: 4px;
 }
-/* ===== MODAL ===== */
+
 .modal {
   display: none;
   position: fixed;
@@ -159,7 +157,7 @@ input, select {
 }
 
 .btn-add {
-  margin-left: auto;   /* 👉 đẩy nút sang phải */
+  margin-left: auto; 
   background: #0d6efd;
   color: #fff;
   padding: 6px 12px;
@@ -179,7 +177,6 @@ input, select {
   gap: 5px;
 }
 
-/* Khi bấm + Add */
 .modal:target {
   display: flex;
 }
@@ -254,3 +251,4 @@ input, select {
   padding: 6px 12px;
   border-radius: 4px;
 }
+
