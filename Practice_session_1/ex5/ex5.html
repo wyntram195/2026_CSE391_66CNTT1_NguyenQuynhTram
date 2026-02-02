@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BÀI TẬP 05 - HR Management</title>
+  <link rel="stylesheet" href="ex5.css">
+</head>
+<body>
+
+<div class="title">
+  <strong>BT5
+</div>
+
+<div class="navbar">
+  <div class="nav-left">
+    <span class="logo">HR Management</span>
+    <a href="#">Home</a>
+    <a href="#">Contact</a>
+  </div>
+  <div class="nav-right">
+    <input type="text" placeholder="Search...">
+    <button>Search</button>
+  </div>
+</div>
+
+<div class="container">
+  <div class="header">
+    <h2>Employee</h2>
+    <a href="#addModal" class="btn-add">+ Add</a>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Position</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Fatima Beatriz</td>
+        <td>Fatima Beatriz@gmail.com</td>
+        <td>0985674321</td>
+        <td>Staff</td>
+        <td>
+          <button class="btn-edit">Edit</button>
+          <button class="btn-delete">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Gabriel Hanna</td>
+        <td>Gabriel Hanna@gmail.com</td>
+        <td>0353674231</td>
+        <td>Staff</td>
+        <td>
+          <button class="btn-edit">Edit</button>
+          <button class="btn-delete">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Charles Diya</td>
+        <td>Charles Diya@gmail.com</td>
+        <td>0347658833</td>
+        <td>Staff</td>
+        <td>
+          <button class="btn-edit">Edit</button>
+          <button class="btn-delete">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Frank Lamdo</td>
+        <td>Frank Lamdo@gmail.com</td>
+        <td>0975444768</td>
+        <td>Manager</td>
+        <td>
+          <button class="btn-edit">Edit</button>
+          <button class="btn-delete">Delete</button>
+        </td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Louis Tom</td>
+        <td>Louis Tom@gmail.com</td>
+        <td>0789568223</td>
+        <td>Staff</td>
+        <td>
+          <button class="btn-edit">Edit</button>
+          <button class="btn-delete">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="modal" id="addModal">
+  <div class="modal-box">
+    <div class="modal-header">
+      <span>New Employee</span>
+      <a href="#" class="close">×</a>
+    </div>
+
+    <div class="modal-body">
+      <div class="row">
+        <div>
+          <label>Name</label>
+          <input type="text">
+        </div>
+        <div>
+          <label>Email</label>
+          <input type="email">
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <label>Phone</label>
+          <input type="text">
+        </div>
+        <div>
+          <label>Position</label>
+          <select>
+            <option>-- Select Position --</option>
+            <option>Staff</option>
+            <option>Manager</option>
+            <option>CEO</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+      <div class="form-group">
+     <label>Sex</label>
+     <div class="sex-options">
+      <label><input type="radio" name="sex"> Male</label>
+      <label><input type="radio" name="sex"> Female</label>
+    </div>
+  </div>
+</div>
+
+    </div>
+
+    <div class="modal-footer">
+      <a href="#" class="btn-save">Save</a>
+      <a href="#" class="btn-cancel">Cancel</a>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="addEmployee">
+  <div class="modal-box">
+
+    <div class="modal-header">
+      <span>New Employee</span>
+      <a href="#" class="close">×</a>
+    </div>
+
+    <div class="modal-body">
+      <div class="row">
+        <div class="form-group">
+          <label>Name</label>
+          <input type="text">
+        </div>
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="form-group">
+          <label>Phone</label>
+          <input type="text">
+        </div>
+        <div class="form-group">
+          <label>Position</label>
+          <select>
+            <option>-- Select Position --</option>
+            <option>Staff</option>
+            <option>Manager</option>
+            <option>CEO</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <label>Gender</label>
+        <input type="radio" name="text"> Male
+        <input type="radio" name="text"> Female
+      </div>
+    </div>
+
+    <div class="modal-footer">
+      <a href="#" class="btn-save">Save</a>
+      <a href="#" class="btn-cancel">Cancel</a>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
