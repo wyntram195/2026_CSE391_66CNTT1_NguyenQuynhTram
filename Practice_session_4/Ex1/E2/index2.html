@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Form Đăng Ký</title>
+<link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+<h1>Đăng ký tài khoản</h1>
+
+<form id="registerForm">
+
+<label>Họ và tên</label>
+<input type="text" id="fullname" maxlength="50">
+<div id="nameCount">0/50</div>
+<small id="fullnameError" class="error"></small>
+
+<label>Email</label>
+<input type="text" id="email">
+<small id="emailError" class="error"></small>
+
+<label>Số điện thoại</label>
+<input type="text" id="phone">
+<small id="phoneError" class="error"></small>
+
+<label>Mật khẩu</label>
+
+<div class="password-wrapper">
+<input type="password" id="password">
+<span id="togglePassword">👁</span>
+</div>
+
+<div class="strength-bar">
+<div id="strengthLevel"></div>
+</div>
+
+<div id="strengthText"></div>
+
+<small id="passwordError" class="error"></small>
+
+<label>Xác nhận mật khẩu</label>
+<input type="password" id="confirm">
+<small id="confirmError" class="error"></small>
+
+<label>Giới tính</label>
+
+<div class="gender">
+<label><input type="radio" name="gender" value="Nam"> Nam</label>
+<label><input type="radio" name="gender" value="Nữ"> Nữ</label>
+</div>
+
+<small id="genderError" class="error"></small>
+
+<div class="terms">
+<label>
+<input type="checkbox" id="terms">
+Tôi đồng ý điều khoản
+</label>
+</div>
+
+<small id="termsError" class="error"></small>
+
+
+<button type="submit">Đăng ký</button>
+
+</form>
+
+<h3 id="success"></h3>
+
+<script src="data2.js"></script>
+
+</body>
+</html>
